@@ -3,9 +3,18 @@
 <body>
     {% include 'incl/nav.twig' %}
 
-    <div class="main" role="main">
-        {{ content }}
-    </div>
+    <main class="main" role="main">
+		<section class="section hero">
+			<div class="section__inner">
+				<img src="{{ base_url }}/image/flash-image.jpg" alt="">
+			</div>
+		</section>
+		<section class="section">
+			<div class="section__inner">
+				{{ content }}
+			</div>
+		</section>
+    </main>
     
     {% include 'incl/footer.twig' %}
 </body>
