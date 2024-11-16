@@ -1,0 +1,38 @@
+/*
+Footer layout
+*/
+
+.footer {
+  background-color: $background-color-primary;
+  padding: $spacing-large $spacing-section-x;
+
+  .footer-container {
+    max-width: $max-width-xlarge;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    p {
+      color: $text-color-inverted;
+    }
+
+    a {
+      color: $text-color-inverted;
+    }
+
+    .social {
+      font-size: 2rem;
+      justify-content: flex-end;
+      display: flex;
+      gap: $spacing-small;
+    }
+  }
+
+  @media (max-width: $breakpoint-large-mobile) {
+    .footer-container {
+      gap: $spacing-small;
+      flex-direction: column-reverse;
+    }
+  }
+}

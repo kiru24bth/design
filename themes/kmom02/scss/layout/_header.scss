@@ -1,0 +1,141 @@
+/*
+Header layout
+*/
+
+// Header
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: $background-color-body;
+  box-shadow: 0 2px 6px -1px #00000012, 0 6px 18px -1px #0000000a;
+
+  .header-container {
+    max-width: $max-width-xlarge;
+    margin: 0 auto;
+    padding: $spacing-small $spacing-section-x;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+
+    @media (max-width: $breakpoint-large-tablet) {
+      grid-template-columns: 1fr auto;
+    }
+  }
+}
+
+// Site header
+.site-header {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: $spacing-large;
+  align-items: center;
+
+  .site-logo {
+    img {
+      height: auto;
+      width: 80px;
+
+      @media (max-width: $breakpoint-large-tablet) {
+        width: 75px;
+      }
+    }
+  }
+
+  .site-title {
+    line-height: normal;
+
+    h1 {
+      margin: 0;
+      color: $text-color-secondary;
+    }
+
+    p {
+      font-style: italic;
+    }
+
+    @media (max-width: $breakpoint-large-tablet) {
+      display: none;
+    }
+  }
+}
+
+// Navigation
+.hidden {
+  display: none;
+}
+
+nav {	
+  ul {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1em 0;
+    list-style: none;
+
+    li {
+      padding: 0 1em;
+
+      &.active {
+        a {
+          color: $text-color-secondary;
+        }
+      }
+    }
+
+    a {
+      color: $text-color-primary;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: $letter-spacing-wide;
+      font-size: $font-size-base;
+      transition: all 150ms linear;
+
+      &:hover {
+        color: $text-color-secondary;
+      }
+    }
+
+    @media (max-width: $breakpoint-large-tablet) {
+      flex-direction: column;
+      padding-bottom: 1em;
+
+      li {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+        a {
+          display: block;
+          padding: 0.5em 0;
+        }
+      }
+    }
+  }
+
+  @media (max-width: $breakpoint-large-tablet) {
+    grid-column: 1/-1;
+  }
+}
+
+@media (max-width: $breakpoint-large-tablet) {
+  .slide {
+    overflow-y: hidden !important;
+    transition: height 150ms ease-in !important;
+  }
+}
+
+.nav-toggle {
+  color: $text-color-primary;
+  display: none;
+
+  @media (max-width: $breakpoint-large-tablet) {
+    display: block;
+    float: right;
+    width: 2em;
+    font-size: 1.5rem;
+    line-height: 2em;
+    text-align: center;
+    cursor: pointer;
+  }
+}

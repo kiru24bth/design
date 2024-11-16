@@ -1,0 +1,13 @@
+/*
+Sidebar layout
+*/
+
+aside {
+  .aside-column {
+    margin-bottom: $spacing-xlarge;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}

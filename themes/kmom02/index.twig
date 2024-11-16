@@ -1,0 +1,41 @@
+{% include 'incl/header.twig' %}
+
+<body>
+    {% include 'incl/nav.twig' %}
+
+	<div class="page-container">
+
+		<div class="flash-image">
+			<img src="{{ base_url }}/image/flash-image.jpg" alt="">
+		</div>
+
+		<div class="content-container has-sidebar-right">
+			<main class="main" role="main">
+				{{ content }}
+			</main>
+			
+			<aside class="aside">
+				<div class="aside-column">
+					<h3>Tips från coachen</h3>
+					<p>Tips och trix till den som jobbar med webbprogrammering och webbutveckling</p>
+					<p><a href="#">Se tipsen »</a></p>
+				</div>
+				<div class="aside-column">
+					<h3>Kunskapsbanken</h3>
+					<p>Artiklar, guider, how-to tillsammans med exempelprogram inom webbprogrammering och webbutveckling.</p>
+					<p><a href="#">Studera i Kunskapsbanken »</a></p>
+				</div>
+				<div class="aside-column">
+					<h3>Kursrepon på GitHub</h3>
+					<p>En stor del av vårt kursmaterial finns på GitHub under organisationen dbwebb.se. Varje kurs har ofta ett kursrepon som du når via organisationen på GitHub.</p>
+					<p><a href="#">Källkod på GitHub »</a></p>
+				</div>
+			</aside>
+		</div>
+
+	</div>
+
+    {% include 'incl/footer.twig' %}
+</body>
+
+</html>
