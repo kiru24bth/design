@@ -6513,6 +6513,9 @@ body {
   .content-container.has-sidebar-right .aside, .content-container.has-sidebar-left .aside {
     grid-column: 1/-1;
   }
+  .content-container.has-sidebar-left .aside {
+    grid-row: 2;
+  }
 }
 
 .flash-image {
