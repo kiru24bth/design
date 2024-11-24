@@ -6880,6 +6880,42 @@ aside .aside-column:last-of-type {
 }
 
 /*
+Technologies layout
+*/
+.technologies {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-gap: 1.5rem;
+}
+
+.technologies h1 {
+  grid-column: span 3;
+}
+
+.span-1 {
+  grid-column: span 1;
+}
+
+.span-2 {
+  grid-column: span 2;
+}
+
+.span-3 {
+  grid-column: span 3;
+}
+
+.box {
+  border: 1px solid #ececec;
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .box {
+    grid-column: span 3;
+  }
+}
+/*
 Table styles
 */
 table {
