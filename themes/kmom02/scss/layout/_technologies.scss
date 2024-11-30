@@ -25,7 +25,7 @@ Technologies layout
 }
 
 .box {
-  border: 1px solid #ececec;
+  border: 1px solid $border-color-light;
   border-radius: 8px;
   padding: $spacing-medium;
 }
