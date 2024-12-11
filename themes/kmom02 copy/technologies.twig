@@ -1,0 +1,32 @@
+{% include 'incl/header.twig' %}
+
+<body>
+    {% include 'incl/nav.twig' %}
+
+	<div class="page-container">
+
+		<div class="flash-image">
+			<img src="{{ base_url }}/image/flash-image.jpg" alt="">
+		</div>
+
+		<div class="content-container">
+			<main class="main" role="main">
+				<div class="technologies">
+					{{ content }}
+
+					{% for technology in meta.Technologies %}
+						<div class="box {{ technology.class }}">
+							<h2>{{ technology.title }}</h2>
+							<p><a href="{{ base_url }}{{ technology.url }}">Läs mer</a></p>
+						</div>
+					{% endfor %}
+				</div>
+			</main>
+		</div>
+
+	</div>
+
+    {% include 'incl/footer.twig' %}
+</body>
+
+</html>

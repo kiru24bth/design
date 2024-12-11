@@ -1,0 +1,37 @@
+/*
+Analysis layout
+*/
+
+.analysis {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-gap: $spacing-medium;
+}
+
+.analysis h1 {
+  grid-column: span 3;
+}
+
+.span-1 {
+  grid-column: span 1;
+}
+
+.span-2 {
+  grid-column: span 2;
+}
+
+.span-3 {
+  grid-column: span 3;
+}
+
+.box {
+  border: 1px solid $border-color-light;
+  border-radius: 8px;
+  padding: $spacing-medium;
+}
+
+@media (max-width: 768px) {
+  .box {
+    grid-column: span 3;
+  }
+}

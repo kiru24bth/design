@@ -1,0 +1,64 @@
+/*
+Variables
+*/
+
+/* Text colors */
+$text-color-primary: #7c4127; /* #202020 */
+$text-color-secondary: #5e301d; /* #306d83 */
+$text-color-inverted: #faf3ef; /* #fffefc */
+
+/* Background colors */
+$background-color-body: #fff;
+$background-color-primary: #995030;
+$background-color-secondary: #fff;
+
+/* Accent colors */
+$accent-color: #28516b;
+
+/* Border colors */
+$border-color-light: #995030;
+$border-color-dark: #682103;
+
+/* Typography */
+$font-primary: 'New Amsterdam', sans-serif;
+$font-secondary: 'Open Sans', sans-serif;
+
+$font-size-base: 1rem;
+$font-size-xsmall: $font-size-base * 0.75;
+$font-size-small: $font-size-base * 0.875;
+$font-size-medium: $font-size-base * 1.125;
+$font-size-large: $font-size-base * 1.75;
+$font-size-xlarge: $font-size-base * 2.25;
+$font-size-xxlarge: $font-size-base * 2.75;
+
+$line-height-base: 1.5;
+$line-height-heading: 1.15;
+
+$letter-spacing-normal: 0;
+$letter-spacing-wide: 0.04em;
+
+/* Spacing */
+$spacing-xsmall: 0.5rem;
+$spacing-small: 1rem;
+$spacing-medium: 1.5rem;
+$spacing-large: 2rem;
+$spacing-xlarge: 4rem;
+
+$spacing-section-y: 6rem;
+$spacing-section-x: 1.5rem;
+
+/* Max-widths */
+$max-width-default: 1200px;
+$max-width-small: calc(6 / 12 * #{$max-width-default});
+$max-width-medium: calc(8 / 12 * #{$max-width-default});
+$max-width-large: calc(10 / 12 * #{$max-width-default});
+$max-width-xlarge: calc(14 / 12 * #{$max-width-default});
+$max-width-none: none;
+
+/* Breakpoints */
+$breakpoint-mobile: 510px;
+$breakpoint-large-mobile: 670px;
+$breakpoint-tablet: 768px;
+$breakpoint-large-tablet: 980px;
+$breakpoint-desktop: 1200px;
+$breakpoint-wide: 1400px;

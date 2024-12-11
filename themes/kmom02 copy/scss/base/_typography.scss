@@ -1,0 +1,170 @@
+/*
+Basic typography styles
+*/
+
+body {
+  font-family: $font-secondary;
+  line-height: $line-height-base;
+  color: $text-color-primary;
+  font-weight: 300;
+  @include responsive-font($font-size-medium, $font-size-base);
+}
+
+p,
+td,
+th,
+li,
+dd {
+  text-align: left;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-primary;
+  font-weight: 400;
+  line-height: $line-height-heading;
+  margin: 0;
+  margin-bottom: $spacing-small;
+  color: $text-color-secondary;
+}
+
+h1 {
+  @include responsive-font($font-size-xxlarge, $font-size-xlarge);
+}
+
+h2 {
+  @include responsive-font($font-size-xlarge, $font-size-large);
+}
+
+h3 {
+  @include responsive-font($font-size-large, 1.5rem);
+}
+
+h4,
+h5,
+h6 {
+  font-size: 1.5rem;
+}
+
+/* Paragraphs */
+p {
+  margin-bottom: $spacing-small;
+
+  &:last-of-type,
+  &:only-of-type {
+    margin-bottom: 0;
+  }
+
+  a {
+    @include link-styles;
+  }
+}
+
+/* Links */
+a {
+  @include link-styles;
+}
+
+/* Lists */
+ol,
+ul {
+  list-style-position: inside;
+  margin: 0;
+
+  li {
+    pre {
+      margin-top: $spacing-medium;
+    }
+  }
+}
+
+/* Handle spacing between lists */
+:is(ul, ol)+ :is(ul, ol),
+:is(ul, ol)+p,
+p+ :is(ul, ol),
+:is(ul, ol)+pre,
+pre+ :is(ul, ol) {
+  margin-top: 1em;
+}
+
+/* Blockquote */
+blockquote {
+  font-style: italic;
+  margin-left: 1em;
+  padding-left: 1em;
+  border-left: 0.5em solid #f5f5f5;
+}
+
+/* Code */
+code {
+  margin: 0 0.1em;
+  padding: 0.1em 0.2em;
+  border: 1px solid $border-color-dark;
+  border-radius: 0.3em;
+  background: $background-color-secondary;
+  font-family: monospace;
+  font-size: 0.85rem;
+  line-height: 1.9824;
+  color: $text-color-primary;
+}
+
+pre {
+  padding: 0 1em;
+  border: 1px solid $border-color-dark;
+  border-radius: 0.3em;
+  background: $background-color-secondary;
+
+  code {
+    display: block;
+    margin: 0;
+    padding: 1.1111em 0;
+    border: 0 none;
+    background: transparent;
+    overflow-x: auto;
+    line-height: 1.4;
+    color: $text-color-primary;
+  }
+}
+
+/* Typography spacing */
+h1~h2 {
+  margin-top: $spacing-large;
+}
+
+h2~h3 {
+  margin-top: $spacing-medium;
+}
+
+p~h2 {
+  margin-top: $spacing-large;
+}
+
+p~h3,
+p~h4 {
+  margin-top: $spacing-medium;
+}
+
+p>img {
+  margin-top: $spacing-large;
+}
+
+p+pre,
+p+table {
+  margin-top: $spacing-large;
+}
+
+pre+p,
+table+p {
+  margin-top: $spacing-large;
+}
+
+ul~ :is(h2, h3) {
+  margin-top: $spacing-large;
+}

@@ -1,0 +1,29 @@
+{% include 'incl/header.twig' %}
+
+<body>
+    {% include 'incl/nav.twig' %}
+
+	<div class="page-container">
+
+		<div class="flash-image">
+			<img src="{{ base_url }}/image/flash-image.jpg" alt="">
+		</div>
+
+		<div class="content-container">
+			<main class="main" role="main">
+				<div class="gallery">
+					{{ content }}
+				</div>
+
+				<div class="embed-container">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/yJzoXAuO9JA?si=ORL6DHYVtBH0t3J8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+				</div>
+			</main>
+		</div>
+
+	</div>
+
+    {% include 'incl/footer.twig' %}
+</body>
+
+</html>

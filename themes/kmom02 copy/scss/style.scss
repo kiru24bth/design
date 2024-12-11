@@ -1,0 +1,33 @@
+// Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&family=Open+Sans:ital,wght@0,300;1,300&display=swap');
+
+// FontAwesome
+@import '../../shared/fontawesome/scss/fontawesome';
+$fa-font-path: '../../shared/fontawesome/webfonts';
+@import '../../shared/fontawesome/scss/brands';
+@import '../../shared/fontawesome/scss/solid';
+@import '../../shared/fontawesome/scss/regular';
+
+// Normalize
+@import '../../node_modules/normalize.css/normalize';
+
+// Abstracts (core utilities)
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+@import 'abstracts/functions';
+
+// Base styles
+@import 'base/base';
+@import 'base/typography';
+
+// Layout (structural components)
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/sidebar';
+@import 'layout/technologies';
+@import 'layout/analysis';
+
+// Components (UI elements)
+@import 'components/tables';
+
+// Themes (Color schemes)

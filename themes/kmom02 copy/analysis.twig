@@ -1,0 +1,32 @@
+{% include 'incl/header.twig' %}
+
+<body>
+    {% include 'incl/nav.twig' %}
+
+	<div class="page-container">
+
+		<div class="flash-image">
+			<img src="{{ base_url }}/image/flash-image.jpg" alt="">
+		</div>
+
+		<div class="content-container">
+			<main class="main" role="main">
+				<div class="analysis">
+					{{ content }}
+
+					{% for analys in meta.Analysis %}
+						<div class="box {{ analys.class }}">
+							<h2>{{ analys.title }}</h2>
+							<p><a href="{{ base_url }}{{ analys.url }}">Läs mer</a></p>
+						</div>
+					{% endfor %}
+				</div>
+			</main>
+		</div>
+
+	</div>
+
+    {% include 'incl/footer.twig' %}
+</body>
+
+</html>

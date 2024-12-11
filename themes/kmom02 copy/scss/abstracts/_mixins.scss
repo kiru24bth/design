@@ -1,0 +1,22 @@
+/*
+Mixins for reusable code snippets
+*/
+
+// Mixin for responsive font sizes
+@mixin responsive-font($desktop, $mobile) {
+  font-size: $desktop;
+
+  @media (max-width: $breakpoint-large-mobile) {
+    font-size: $mobile;
+  }
+}
+
+// Mixin for links
+@mixin link-styles($hover-color: $text-color-secondary) {
+  color: inherit;
+  transition: all 150ms linear;
+
+  &:hover {
+    color: $hover-color;
+  }
+}
