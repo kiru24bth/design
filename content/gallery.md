@@ -6,7 +6,7 @@ Template: gallery
 
 # Bildgalleri
 
-<div class="gallery-item">
+<div class="gallery-item span-2">
     <a href="%base_url%/image/corgi-with-stick.jpg" target="_blank">
         <picture>
             <source media="(min-width: 981px)" srcset="%base_url%/image/corgi-with-stick.jpg?w=552&q=80">
@@ -16,7 +16,7 @@ Template: gallery
     </a>
 </div>
 
-<div class="gallery-item">
+<div class="gallery-item span-1">
     <a href="%base_url%/image/city-corgi-pup.jpg" target="_blank">
         <picture>
             <source media="(min-width: 981px)" srcset="%base_url%/image/city-corgi-pup.jpg?w=552&q=80">
@@ -26,7 +26,7 @@ Template: gallery
     </a>
 </div>
 
-<div class="gallery-item">
+<div class="gallery-item span-2">
     <a href="%base_url%/image/corgi-splot.jpg" target="_blank">
         <picture>
             <source media="(min-width: 981px)" srcset="%base_url%/image/corgi-splot.jpg?w=552&q=80">
@@ -36,7 +36,7 @@ Template: gallery
     </a>
 </div>
 
-<div class="gallery-item">
+<div class="gallery-item span-1">
     <a href="%base_url%/image/sleepy-corgi.jpg" target="_blank">
         <picture>
             <source media="(min-width: 981px)" srcset="%base_url%/image/sleepy-corgi.jpg?w=552&q=80">
@@ -46,7 +46,7 @@ Template: gallery
     </a>
 </div>
 
-<div class="gallery-item">
+<div class="gallery-item span-1 align-center">
     <a href="%base_url%/image/wet-corgi-pup.jpg" target="_blank">
         <picture>
             <source media="(min-width: 981px)" srcset="%base_url%/image/wet-corgi-pup.jpg?w=552&q=80">
@@ -56,7 +56,7 @@ Template: gallery
     </a>
 </div>
 
-<div class="gallery-item">
+<div class="gallery-item span-2">
     <a href="%base_url%/image/winter-corgi.jpg" target="_blank">
         <picture>
             <source media="(min-width: 981px)" srcset="%base_url%/image/winter-corgi.jpg?w=552&q=80">
@@ -66,7 +66,7 @@ Template: gallery
     </a>
 </div>
 
-<div class="gallery-item">
+<div class="gallery-item span-1 align-bottom">
     <a href="%base_url%/image/bouncing-corgi.jpg" target="_blank">
         <picture>
             <source media="(min-width: 981px)" srcset="%base_url%/image/bouncing-corgi.jpg?w=552&q=80">
@@ -76,7 +76,7 @@ Template: gallery
     </a>
 </div>
 
-<div class="gallery-item">
+<div class="gallery-item span-2 align-bottom">
     <a href="%base_url%/image/cosy-corgi.jpg" target="_blank">
         <picture>
             <source media="(min-width: 981px)" srcset="%base_url%/image/cosy-corgi.jpg?w=552&q=80">
@@ -86,7 +86,7 @@ Template: gallery
     </a>
 </div>
 
-<div class="gallery-item">
+<div class="gallery-item span-3">
     <a href="%base_url%/image/corgi-in-grass.jpg" target="_blank">
         <picture>
             <source media="(min-width: 981px)" srcset="%base_url%/image/corgi-in-grass.jpg?w=552&q=80">

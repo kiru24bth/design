@@ -4,7 +4,7 @@ Gallery layout
 
 .gallery {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   grid-gap: $spacing-medium;
 }
 
@@ -17,13 +17,25 @@ Gallery layout
   object-fit: cover;
 }
 
+.gallery-item {
+	display: grid;
+}
+
 .gallery-item.video {
   grid-column: 1/-1;
 }
 
+.gallery-item.align-bottom {
+	align-items: end;
+}
+
+.gallery-item.align-center {
+	align-items: center;
+}
+
 @media (max-width: 980px) {
   .gallery {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 
@@ -31,6 +43,10 @@ Gallery layout
   .gallery {
     grid-template-columns: minmax(0, 1fr);
   }
+
+	.gallery-item {
+		grid-column: 1/-1;
+	}
 }
 
 /* Responsive elements */
