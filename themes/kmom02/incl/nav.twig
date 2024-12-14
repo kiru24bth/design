@@ -3,7 +3,7 @@
 		<div class="site-header">
 			{% if pages["_meta"].meta.logo %}
 			<div class="site-logo">
-				<a href="{{ base_url }}">
+				<a href="{{ base_url }}" title="Logotyp">
 					<img src="{{ base_url }}/{{ pages["_meta"].meta.logo|url }}" alt="" width="100" height="100">
 				</a>
 			</div>
@@ -15,7 +15,7 @@
 		</div>
 
 		<a class="nav-toggle" id="nav-toggle" title="Toggle Menu" role="button" aria-controls="nav" aria-expanded="false"
-				tabindex="1">
+				tabindex="0">
 			<i class="fa fa-bars" aria-hidden="true" id="toggler"></i>
 			<span class="sr-only">Toggle Menu</span>
 		</a>

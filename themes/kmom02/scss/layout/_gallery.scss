@@ -18,7 +18,7 @@ Gallery layout
 }
 
 .gallery-item {
-	display: grid;
+  display: grid;
 }
 
 .gallery-item.video {
@@ -26,11 +26,11 @@ Gallery layout
 }
 
 .gallery-item.align-bottom {
-	align-items: end;
+  align-items: end;
 }
 
 .gallery-item.align-center {
-	align-items: center;
+  align-items: center;
 }
 
 @media (max-width: 980px) {
@@ -44,9 +44,9 @@ Gallery layout
     grid-template-columns: minmax(0, 1fr);
   }
 
-	.gallery-item {
-		grid-column: 1/-1;
-	}
+  .gallery-item {
+    grid-column: 1/-1;
+  }
 }
 
 /* Responsive elements */
